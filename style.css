@@ -1,0 +1,28 @@
+.toggle{
+    display:none;
+}
+.container{
+    width: 3.5em;
+    display: inline-block;
+    height: 2em;
+    background-color: hotpink;
+    position: relative;
+    padding: 0.2em;
+    border: 0.1em solid grey;
+    border-radius: 1.3em;
+}
+.circle{
+    width: 2em;
+    height: 2em;
+    display: inline-block-;
+    box-shadow: grey;
+    background-color: honeydew;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.toggle:checked + label>.container{
+    background-color: greenyellow;
+}
+.toggle:checked + label .circle{
+    transform: translateX(75%);
+}
